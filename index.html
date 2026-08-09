@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridGuard AI | Transformer Monitoring</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>⚡ GridGuard AI</h1>
+            <p>Smart Transformer Monitoring System</p>
+        </div>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="hero">
+            <div>
+                <p class="eyebrow">TRANSFORMER MONITORING</p>
+                <h2>Transformer T-001</h2>
+                <p class="muted">AI-powered health and risk assessment</p>
+            </div>
+
+            <button id="analyzeBtn">Run AI Analysis</button>
+        </section>
+
+
+        <!-- AI SUMMARY -->
+        <section class="cards">
+
+            <div class="card">
+                <span>Health Score</span>
+                <strong id="healthScore">--</strong>
+                <small>/ 100</small>
+            </div>
+
+            <div class="card">
+                <span>Risk Level</span>
+                <strong id="riskLevel">--</strong>
+            </div>
+
+            <div class="card">
+                <span>Confidence</span>
+                <strong id="confidence">--</strong>
+            </div>
+
+            <div class="card">
+                <span>Status</span>
+                <strong id="status">--</strong>
+            </div>
+
+        </section>
+
+
+        <!-- SENSOR DATA -->
+        <section class="section">
+
+            <div class="section-title">
+                <h2>Live Parameters</h2>
+                <span>Current readings</span>
+            </div>
+
+            <div class="sensor-grid">
+
+                <div class="sensor-card">
+                    <span>🌡️ Temperature</span>
+                    <strong id="temperature">65°C</strong>
+                </div>
+
+                <div class="sensor-card">
+                    <span>⚡ Voltage</span>
+                    <strong id="voltage">11.2 V</strong>
+                </div>
+
+                <div class="sensor-card">
+                    <span>🔌 Current</span>
+                    <strong id="current">2.5 A</strong>
+                </div>
+
+                <div class="sensor-card">
+                    <span>📊 Load</span>
+                    <strong id="load">70%</strong>
+                </div>
+
+                <div class="sensor-card">
+                    <span>📳 Vibration</span>
+                    <strong id="vibration">1.2</strong>
+                </div>
+
+                <div class="sensor-card">
+                    <span>💧 Humidity</span>
+                    <strong id="humidity">55%</strong>
+                </div>
+
+                <div class="sensor-card">
+                    <span>🛢️ Oil Temperature</span>
+                    <strong id="oilTemperature">60°C</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI ANALYSIS -->
+        <section class="analysis-grid">
+
+            <div class="panel">
+                <div class="section-title">
+                    <h2>🤖 AI Analysis</h2>
+                </div>
+
+                <div class="analysis-item">
+                    <span>Detected condition</span>
+                    <strong id="aiStatus">Waiting for analysis...</strong>
+                </div>
+
+                <div class="analysis-item">
+                    <span>Reason</span>
+                    <p id="reason">Run the AI analysis to evaluate transformer condition.</p>
+                </div>
+
+                <div class="analysis-item">
+                    <span>Recommendation</span>
+                    <p id="recommendation">No recommendation available yet.</p>
+                </div>
+            </div>
+
+
+            <div class="panel">
+                <div class="section-title">
+                    <h2>🚨 Alerts</h2>
+                </div>
+
+                <div id="alertBox" class
