@@ -5,12 +5,9 @@
 const API_URL = "https://grid-guard-ai.onrender.com/predict";
 
 // Get elements from the dashboard
-const conditionElement = document.getElementById("condition");
-const confidenceElement = document.getElementById("confidence");
-const healthScoreElement = document.getElementById("health-score");
-const riskElement = document.getElementById("risk");
+const conditionElement = document.getElementById("aiStatus");
+const reasonElement = document.getElementById("reason");
 const recommendationElement = document.getElementById("recommendation");
-
 // Update dashboard with AI response
 function updateDashboard(data) {
 
