@@ -12,7 +12,7 @@
    Example:
 
    const API_BASE_URL =
-       "https://your-gridguard-api.onrender.com";
+      "https://grid-guard-ai.onrender.com"
 
    DO NOT put a slash at the end.
 */
