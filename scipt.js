@@ -2,7 +2,7 @@
 
 // IMPORTANT:
 // Replace this URL later with your actual deployed FastAPI endpoint.
-const API_URL = "YOUR_API_URL_HERE";
+const API_URL = "https://grid-guard-ai.onrender.com/predict";
 
 // Get elements from the dashboard
 const conditionElement = document.getElementById("condition");
@@ -15,7 +15,7 @@ const recommendationElement = document.getElementById("recommendation");
 function updateDashboard(data) {
 
     if (conditionElement) {
-        conditionElement.textContent = data.condition || "N/A";
+        conditionElement.textContent = data.status || "N/A";
     }
 
     if (confidenceElement) {
